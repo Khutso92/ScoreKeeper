@@ -9,6 +9,7 @@
         xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:background="#8000"
 
         android:orientation="vertical"
         tools:context="com.khutso.scorekeeper.MainActivity">
@@ -92,7 +93,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
-            android:orientation="horizontal">
+            android:orientation="horizontal"
+            >
 
 
             <LinearLayout
@@ -107,7 +109,8 @@
                     android:layout_height="0dp"
                     android:layout_weight="1"
                     android:onClick="add1_for_a"
-                    android:text="+ 1 point" />
+                    android:text="+ 1 point"
+                    />
 
                 <Button
                     android:id="@+id/subtract_1__pointA"
@@ -155,7 +158,7 @@
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:layout_marginBottom="10dp"
-                            android:text="match hkjghfkjghfkjhgkfhgkfkgfkhgkjfhkjghfkjhjshgkhgkhls" />
+                            android:text="match details with will display here when adding or taking points" />
 
                     </LinearLayout>
                 </ScrollView>
@@ -200,12 +203,15 @@
 
 
         <RatingBar
-            android:id="@+id/ratingBar2"
+            android:id="@+id/ratingBar"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:onClick="rateService"
             android:clickable="true"
-            android:layout_gravity="center" />
+            android:layout_gravity="center"
+            android:numStars="5"
+            android:progressTint="#000"
+            android:stepSize="1"/>
 
 
         <LinearLayout
